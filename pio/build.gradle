@@ -7,6 +7,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
+        applicationId "com.miseryset.shell"
         resConfigs "zh"
         minSdkVersion 21
         targetSdkVersion 28

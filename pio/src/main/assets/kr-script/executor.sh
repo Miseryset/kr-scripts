@@ -48,6 +48,9 @@ then
     cd "$START_DIR"
 fi
 
+CTD="${START_DIR}/kr-script/custom"
+export PATH=$PATH:${CTD}/tools
+
 # 运行脚本
 if [[ -f "$script_path" ]]; then
     chmod 755 "$script_path"

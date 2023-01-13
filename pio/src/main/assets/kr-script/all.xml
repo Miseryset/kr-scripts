@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <group title="快速生成Magisk字体模块">
+        <page
+            config="layouts/font_module_build.xml"
+            title="字体模块生成" />
+    </group>
+    <group title="自定义页面">
+        <resource file="file:///android_asset/scripts/customized_page_check.sh" />
+        <resource file="file:///android_asset/layouts/font_module_build.xml" />
+        <!--输出配置文件绝对路径-->
+        <page
+            before-read="scripts/customized_page_check.sh"
+            config-sh="echo '/sdcard/Android/MiserysetTool/customizedlayouts.xml'"
+            title="自定义页面" />
+    </group>
+    <group title="开发文档">
+        <!--html属性不支持省略file:///android_asset/前缀-->
+        <page html="file:///android_asset/docs/index.html#/document-library" title="查看PIO的详细文档" />
+    </group>
+</page>

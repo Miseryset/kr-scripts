@@ -18,7 +18,7 @@
             android:text="@string/about_title"
             android:textColor="#aaaaaa"
             android:textSize="11dp" />
-
+<!--
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
             android:text="@string/appliction_desc"
             android:textColor="@color/colorAccent"
             android:textSize="11dp" />
-
+-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,11 +65,13 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
             <LinearLayout
+                android:layout_marginTop="24dp"
                 android:paddingBottom="4dp"
                 android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_weight="50"
                 android:layout_height="wrap_content">
+                <!--
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -78,6 +80,7 @@
                     android:textAlignment="textEnd"
                     android:textColor="#aaaaaa"
                     android:textSize="11dp" />
+                    -->
 
                 <TextView
                     android:layout_width="match_parent"

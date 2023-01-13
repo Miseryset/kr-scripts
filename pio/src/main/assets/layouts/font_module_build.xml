@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<font_module_build>
+
+    <!--假设我们的脚本放在assets下一个叫scripts的文件夹-->
+    <resource file="file:///android_asset/scripts/font_module_build.sh" />
+
+    <action>
+        <title>简单模块制作</title>
+        <param
+            name="font_module"
+            label="模块模板"
+            required="true"
+            type="file"
+            editable="true"
+            suffix="zip"
+            value="" />
+        <param
+            name="save_folder"
+            label="保存位置"
+            required="true"
+            type="folder"
+            editable="true"
+            value="/sdcard/Download" />
+        <param
+            name="isflash"
+            label="直接刷入？"
+            type="switch"
+            value="0" />
+        <param
+            name="isdelete_of"
+            label="删除字体原文件？"
+            type="switch"
+            value="0" />
+        <param
+            name="font_id"
+            label="字体id"
+            desc="仅限英文 数字 下划线"
+            type="text"
+            value="font_id" />
+        <param
+            name="font_name"
+            label="字体名称"
+            type="text"
+            value="font_by_MiserysetTool" />
+        <param
+            name="fontw_thin"
+            label="字重：淡体"
+            desc="100 - 淡体 Thin /Hairline"
+            type="file"
+            value="" />
+        <param
+            name="fontw_extralight"
+            label="字重：特细"
+            desc="200 - 特细 Extra-Light / Ultra-Light"
+            type="file"
+            value="" />
+        <param
+            name="fontw_light"
+            label="字重：细体"
+            desc="300 - 细体 Light"
+            type="file"
+            value="" />
+
+        <param
+            name="fontw_regular"
+            required="true"
+            label="字重：标准"
+            desc="400 - 标准 Regular / Normal / Book / Plain(必选项)"
+            type="file"
+            value="" />
+        <param
+            name="fontw_medium"
+            label="字重：适中"
+            desc="500 - 适中 Medium"
+            type="file"
+            value="" />
+        <param
+            name="fontw_demibold"
+            label="字重：次粗"
+            desc="600 - 次粗 Demi-Bold / Semi-Bold"
+            type="file"
+            value="" />
+        <param
+            name="fontw_bold"
+            label="字重：粗体"
+            desc="700 - 粗体 Bold"
+            type="file"
+            value="" />
+        <param
+            name="fontw_extrabold"
+            label="字重：特粗"
+            desc="800 - 特粗 Extra-bold / Extra"
+            type="file"
+            value="" />
+        <param
+            name="fontw_black"
+            label="字重：浓体"
+            desc="900 - 浓体 Black / Heavy"
+            type="file"
+            value="" />
+
+        <set>sh $START_DIR/scripts/font_module_build.sh</set>
+    </action>
+    <page
+        html="https://font.yukonga.top/index.html"
+        title="字重测试" />
+</font_module_build>

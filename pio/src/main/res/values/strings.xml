@@ -5,7 +5,7 @@
     <!--是否强制获取ROOT-->
     <bool name="force_root">false</bool>
 
-    <string name="app_name">PIO</string>
+    <string name="app_name">MiserysetTool</string>
     <string name="btn_exit">退出</string>
     <string name="float_monitor_tips">双击悬浮窗即可关闭，或按住拖动调整位置</string>
     <string name="permission_float">请授权显示悬浮窗权限！</string>
@@ -15,8 +15,8 @@
     <string name="author_name">xxx</string>
     <string name="about_title">关于 · PIO</string>
     <string name="appliction_desc">这是框架演示应用</string>
-    <string name="appliction_name">PIO 示例架</string>
-    <string name="appliction_author">作者：嘟嘟ski</string>
+    <string name="appliction_name">MiserysetTool</string>
+    <string name="appliction_author">作者：Miseryset</string>
     <string name="engine_version_name">基于[Kr-Script4.0.3]创作</string>
 
     <string name="tab_home">首页</string>
