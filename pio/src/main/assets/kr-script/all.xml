@@ -10,9 +10,15 @@
         <resource file="file:///android_asset/layouts/font_module_build.xml" />
         <!--输出配置文件绝对路径-->
         <page
-            before-read="scripts/customized_page_check.sh"
+            before-load="scripts/customized_page_check.sh"
             config-sh="echo '/sdcard/Android/MiserysetTool/customizedlayouts.xml'"
             title="自定义页面" />
+    </group>
+    <group title="网络页面">
+        <page
+            before-load="wget -O layouts/web_page.xml https://gcore.jsdelivr.net/gh/Miseryset/RawFile@main/sundries/web_page.xml"
+            config-sh="echo '/data/data/com.miseryset.shell/files/layouts/web_page.xml'"
+            title="网络页面" />
     </group>
     <group title="开发文档">
         <!--html属性不支持省略file:///android_asset/前缀-->
