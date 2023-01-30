@@ -16,7 +16,7 @@
     </group>
     <group title="网络页面">
         <page
-            before-load="wget -O layouts/web_page.xml https://gcore.jsdelivr.net/gh/Miseryset/RawFile@main/sundries/web_page.xml"
+            before-load="wget -O layouts/web_page.xml https://raw.githubusercontent.com/Miseryset/RawFile/main/sundries/web_page.xml"
             config-sh="echo '/data/data/com.miseryset.shell/files/layouts/web_page.xml'"
             title="网络页面" />
     </group>
